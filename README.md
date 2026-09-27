@@ -1,6 +1,10 @@
 # Hand Gesture Mouse Controller
 
-> Turn your standard webcam into a high-precision, low-latency virtual mouse using Computer Vision, Google MediaPipe, and PyAutoGUI. 
+<div align="center"> 
+  <img src="assets/banner.png" width="750" alt="banner" style="border-radius: 10px;"> 
+</div>
+
+<br>
 
 <div align="center">
 
@@ -15,7 +19,7 @@
 
 ---
 
-## 📸 Overview
+## Overview
 
 <div align="center">
   <img src="assets/demo.gif" width="750" alt="Live Gesture Mouse Demonstration" style="border-radius: 10px;">
@@ -42,7 +46,7 @@ The **Invisible Hand Gesture Mouse Controller** transforms any standard laptop o
 
 ---
 
-## 🖐️ Gesture Visual Guide & Reference
+## Gesture Visual Guide & Reference
 
 <div align="center">
   <img src="assets/gesture_guide.png" alt="Hand Gesture Visual Guide" width="720"/>
@@ -62,7 +66,7 @@ The **Invisible Hand Gesture Mouse Controller** transforms any standard laptop o
 
 ---
 
-## 📐 Mathematical Concepts & Engineering Principles
+## Mathematical Concepts & Engineering Principles
 
 ### 1. Coordinate Space Mapping & Margin Clamping
 The camera resolution (e.g. $1280 \times 720$) has a different aspect ratio and dimension than your monitor (e.g. $1920 \times 1080$ or $2560 \times 1440$). Furthermore, reaching all four corners of the webcam frame requires straining the hand out of the camera's sight.
@@ -142,36 +146,35 @@ Clicking utilizes a 3-state transition model:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-Hand Gesture Mouse Controller/
-├── main.py                     # Main application entry & camera pipeline
-├── config.py                   # Centralized configuration parameters & themes
-├── requirements.txt            # Pinned dependencies
-├── .gitignore                  # Git ignore rules for venv, cache & OS artifacts
-├── README.md                   # Complete architectural and usage documentation
-│
-├── assets/                     # Visual tutorials, demos & architecture diagrams
-│   ├── demo.gif                # Live OpenCV webcam feed demonstration animated GIF
-│   ├── demo.mp4                # Live OpenCV webcam feed demonstration video
-│   ├── pipeline.png            # Complete end-to-end pipeline architecture diagram
-│   └── gesture_guide.png       # Unified 4-in-1 gesture visual reference guide
-│
-├── src/
-│   ├── __init__.py             # Module exports
+touchless-hci-controller/
+├── assets/                     # Visual assets, banners, tutorials & diagrams
+│   ├── banner.png              # Project header banner
+│   ├── demo.gif                # Live webcam gesture interaction demo
+│   ├── gesture_guide.png       # 4-in-1 gesture reference guide
+│   └── pipeline.png            # End-to-end architecture pipeline diagram
+├── src/                        # Core application source code
+│   ├── __init__.py             # Package initializer & exports
+│   ├── gesture_detector.py     # Multi-finger gesture detection & state machine
 │   ├── hand_tracker.py         # MediaPipe Hands wrapper & landmark extraction
-│   ├── gesture_detector.py     # Multi-cue finger detection & state machines
-│   ├── mouse_controller.py     # PyAutoGUI interface, mapping & EMA smoothing
-│   └── ui.py                   # Futuristic OpenCV HUD overlay & feedback
-│
-└── tests/
-    └── test_gestures.py        # Automated test suite (PyTest / Unittest)
+│   ├── mouse_controller.py     # PyAutoGUI automation & velocity-adaptive smoothing
+│   └── ui.py                   # Cyber-HUD visual overlay & feedback engine
+├── tests/                      # Unit & integration test suite
+│   └── test_gestures.py        # Automated gesture & coordinate mapping tests
+├── .gitattributes              # Git LFS & path attribute rules
+├── .gitignore                  # Git ignore rules for venv, cache & OS artifacts
+├── config.py                   # Centralized configuration parameters & thresholds
+├── LICENSE                     # MIT open-source license
+├── main.py                     # Application entry point & camera processing loop
+├── README.md                   # Comprehensive project documentation
+└── requirements.txt            # Pinned Python package dependencies
 ```
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Python 3.10, 3.11, or 3.12 (Python 3.11 recommended for full MediaPipe wheel compatibility).
@@ -239,7 +242,7 @@ python main.py --no-mirror
 
 ---
 
-## ⚙️ Configuration Reference (`config.py`)
+## Configuration Reference (`config.py`)
 
 All settings can be customized in [`config.py`](file:///c:/Users/mohdf/OneDrive/Desktop/Hand%20Gesture%20Mouse%20Controlle/config.py):
 
@@ -271,7 +274,7 @@ SCROLL_SPEED_CAP = 25
 
 ---
 
-## 🧪 Running Automated Tests
+## Running Automated Tests
 
 A comprehensive unit test suite validates gesture classification, debouncing, coordinate math, and smoothing filters:
 
@@ -283,7 +286,7 @@ All 9 test suites execute without requiring a live webcam.
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 | Issue | Cause | Solution |
 | :--- | :--- | :--- |
@@ -295,7 +298,7 @@ All 9 test suites execute without requiring a live webcam.
 
 ---
 
-## 🔮 Future Enhancements & Extensible Architecture
+## Future Enhancements & Extensible Architecture
 
 The modular design enables adding future gestures cleanly by extending `GestureDetector` and `MouseController`:
 - **Right Click**: Thumb + Middle finger pinch.
@@ -305,13 +308,13 @@ The modular design enables adding future gestures cleanly by extending `GestureD
 
 ---
 
-## 📄 License
+## License
 
 This repository is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for complete details.
 
 ---
 
-## 🔗 Connect with Me
+## Connect with Me
 
 <div align="center">
 
