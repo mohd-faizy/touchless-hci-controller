@@ -18,9 +18,7 @@
 ## 📸 Overview
 
 <div align="center">
-  <video src="assets/demo.mp4" width="850" controls autoplay loop muted>
-    Your browser does not support the video tag.
-  </video>
+  <img src="assets/demo.gif" width="850" alt="Live Gesture Mouse Demonstration">
 </div>
 
 The **Invisible Hand Gesture Mouse Controller** transforms any standard laptop or desktop webcam into an invisible, touchless mouse interface. By tracking hand landmarks in real-time, the system classifies gestures (cursor tracking, pinch-clicking, and two-finger directional scrolling), smooths noisy camera coordinates using an **Exponential Moving Average (EMA) low-pass filter**, and dispatches native operating-system mouse events with zero perceived latency.
@@ -155,6 +153,7 @@ Hand Gesture Mouse Controller/
 ├── README.md                   # Complete architectural and usage documentation
 │
 ├── assets/                     # Visual tutorials, demos & architecture diagrams
+│   ├── demo.gif                # Live OpenCV webcam feed demonstration animated GIF
 │   ├── demo.mp4                # Live OpenCV webcam feed demonstration video
 │   ├── pipeline.png            # Complete end-to-end pipeline architecture diagram
 │   └── gesture_guide.png       # Unified 4-in-1 gesture visual reference guide
