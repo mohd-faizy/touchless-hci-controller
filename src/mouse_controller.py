@@ -1,5 +1,5 @@
 """
-Mouse Controller module for the Invisible Hand Gesture Mouse Controller.
+Mouse Controller module for the Hand Gesture Mouse Controller.
 Encapsulates high-performance OS cursor automation, coordinate space transformation,
 adaptive velocity-based exponential smoothing (1€ Filter principles),
 sub-pixel jitter deadbanding, and native Windows API acceleration.

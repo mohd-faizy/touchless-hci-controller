@@ -1,5 +1,5 @@
 """
-Gesture detection module for the Invisible Hand Gesture Mouse Controller.
+Gesture detection module for the Hand Gesture Mouse Controller.
 Implements robust multi-cue finger state detection, hysteresis pinch sensing,
 gesture priority conflict resolution, and debounced state machines.
 """

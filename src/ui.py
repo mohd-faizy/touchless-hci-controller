@@ -1,5 +1,5 @@
 """
-On-screen user interface (HUD) module for the Invisible Hand Gesture Mouse Controller.
+On-screen user interface (HUD) module for the Hand Gesture Mouse Controller.
 Renders real-time telemetry cards, interaction zone boundaries, landmark halos,
 pinch indicators, and status badges.
 """

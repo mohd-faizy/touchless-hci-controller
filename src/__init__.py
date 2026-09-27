@@ -1,5 +1,5 @@
 """
-Invisible Hand Gesture Mouse Controller package.
+Hand Gesture Mouse Controller package.
 """
 
 from .hand_tracker import HandTracker

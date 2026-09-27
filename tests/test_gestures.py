@@ -1,5 +1,5 @@
 """
-Unit test suite for the Invisible Hand Gesture Mouse Controller.
+Unit test suite for the Hand Gesture Mouse Controller.
 Tests finger state detection, gesture classification priority, debounced click
 state machines, coordinate mapping, exponential smoothing, and scroll calculation.
 """

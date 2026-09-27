@@ -1,5 +1,5 @@
 """
-Main application entry point for the Invisible Hand Gesture Mouse Controller.
+Main application entry point for the Hand Gesture Mouse Controller.
 Integrates webcam video stream, MediaPipe hand tracking, gesture classification,
 exponentially smoothed PyAutoGUI mouse control, and real-time HUD rendering.
 """
@@ -28,7 +28,7 @@ from src.ui import UIRenderer
 def parse_arguments() -> argparse.Namespace:
     """Parses optional command-line overrides for runtime configuration."""
     parser = argparse.ArgumentParser(
-        description="Invisible Hand Gesture Mouse Controller"
+        description="Hand Gesture Mouse Controller"
     )
     parser.add_argument(
         "--camera",
@@ -113,7 +113,7 @@ def main() -> None:
     args = parse_arguments()
 
     print("=" * 65)
-    print(" INVISIBLE HAND GESTURE MOUSE CONTROLLER")
+    print(" HAND GESTURE MOUSE CONTROLLER")
     print("=" * 65)
     print(f" Camera Index       : {args.camera}")
     print(f" Smoothing Alpha    : {args.smoothing}")
@@ -155,7 +155,7 @@ def main() -> None:
 
     ui = UIRenderer()
 
-    window_name = "Invisible Hand Gesture Mouse Controller"
+    window_name = "Hand Gesture Mouse Controller"
     cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
 
     mirror_feed = not args.no_mirror if args.no_mirror else config.MIRROR_FEED

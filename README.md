@@ -25,7 +25,7 @@
   <img src="assets/demo.gif" width="750" alt="Live Gesture Mouse Demonstration" style="border-radius: 10px;">
 </div>
 
-The **Invisible Hand Gesture Mouse Controller** transforms any standard laptop or desktop webcam into an invisible, touchless mouse interface. By tracking hand landmarks in real-time, the system classifies gestures (cursor tracking, pinch-clicking, and two-finger directional scrolling), smooths noisy camera coordinates using an **Exponential Moving Average (EMA) low-pass filter**, and dispatches native operating-system mouse events with zero perceived latency.
+The **Hand Gesture Mouse Controller** transforms any standard laptop or desktop webcam into a high-precision, touchless mouse interface. By tracking hand landmarks in real-time, the system classifies gestures (cursor tracking, pinch-clicking, and two-finger directional scrolling), smooths noisy camera coordinates using an **Exponential Moving Average (EMA) low-pass filter**, and dispatches native operating-system mouse events with zero perceived latency.
 
 <br>
 

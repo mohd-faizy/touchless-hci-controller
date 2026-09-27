@@ -1,5 +1,5 @@
 """
-Configuration module for the Invisible Hand Gesture Mouse Controller.
+Configuration module for the Hand Gesture Mouse Controller.
 Contains all centralized tuning parameters for camera capture, hand tracking,
 gesture detection, mouse control, and HUD visualization.
 """
