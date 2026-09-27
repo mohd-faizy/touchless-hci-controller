@@ -142,7 +142,7 @@ Clicking utilizes a 3-state transition model:
 - `PINCH START`: Contact detected for the first time. Emits `click_event = True` and records `last_click_time = time.time()`.
 - `PINCH HELD`: User continues holding fingers together. Emits `click_event = False` (does not repeat).
 - `PINCH RELEASE`: Fingers separate beyond release threshold. Resets latch.
-- Cooldown: Requires $t_{\text{now}} - t_{\text{last\_click}} \ge T_{\text{cooldown}}$ (default: $0.4\text{s}$) before a new click can fire.
+- Cooldown: Requires $t_{\text{now}} - t_{\text{last-click}} \ge T_{\text{cooldown}}$ (default: $0.4\text{s}$) before a new click can fire.
 
 ---
 
