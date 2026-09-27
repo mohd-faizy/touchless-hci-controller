@@ -30,7 +30,7 @@ The **Invisible Hand Gesture Mouse Controller** transforms any standard laptop o
 <br>
 
 <div align="center"> 
-  <img src="assets/pipeline.png" width="750" alt="pipeline"> 
+  <img src="assets/pipeline.png" width="550" alt="pipeline"> 
   
 </div>
 
