@@ -1,0 +1,17 @@
+[project]
+name = "touchless-hci-controller"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "mediapipe>=0.10.0,<=0.10.14",
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "pyautogui>=0.9.54",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
